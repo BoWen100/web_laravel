@@ -11,11 +11,11 @@
                         <a class="dropdown-item" href="#">编辑资料</a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" id="logout" href="#">
-                            <from method="POST" action="{{ route('logout') }}">
+                            <form method="POST" action="{{ route('logout') }}">
                                 {{ csrf_field() }}
                                 {{ method_field('DELETE') }}
                                 <button class="btn btn-block btn-danger" type="submit" name="button">退出</button>
-                            </from>
+                            </form>
                         </a>
                     </div>
                 </li>
